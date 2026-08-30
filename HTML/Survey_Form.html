@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">FreeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+  <form id="survey-form">
+    <!-- Name -->
+    <label id="name-label">Name
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </label><br>
+
+    <!-- Email -->
+    <label id="email-label">Email
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </label><br>
+
+    <!-- Age -->
+    <label id="number-label">Age (optional)
+      <input type="number" id="number" name="age" placeholder="Age" min="1" max="100">
+    </label><br>
+
+    <!-- Dropdown -->
+    <p>Which option best describes your current role?</p>
+    <select id="dropdown" name="role">
+      <option value="">Select current role</option>
+      <option value="sde">SDE</option>
+      <option value="student">Student</option>
+      <option value="learner">Learner</option>
+    </select><br>
+
+    <!-- Radio Buttons -->
+    <p>Would you recommend freeCodeCamp to a friend?</p>
+    <input type="radio" id="definitely" name="recommend" value="Definitely">
+    <label for="definitely">Definitely</label>
+
+    <input type="radio" id="maybe" name="recommend" value="Maybe">
+    <label for="maybe">Maybe</label>
+
+    <input type="radio" id="notsure" name="recommend" value="Not sure">
+    <label for="notsure">Not sure</label><br>
+
+    <!-- Favorite Feature -->
+    <p>What is your favorite feature of freeCodeCamp?</p>
+    <select id="feature" name="feature">
+      <option value="">Select an option</option>
+      <option value="projects">Projects</option>
+      <option value="challenges">Challenges</option>
+      <option value="community">Community</option>
+    </select><br>
+
+    <!-- Checkboxes -->
+    <p>What would you like to see improved? (check all that apply)</p>
+    <input type="checkbox" id="frontend" name="improve" value="Front-end Projects">
+    <label for="frontend">Front-end Projects</label><br>
+
+    <input type="checkbox" id="backend" name="improve" value="Back-end Projects">
+    <label for="backend">Back-end Projects</label><br>
+
+    <input type="checkbox" id="datavis" name="improve" value="Data Visualization">
+    <label for="datavis">Data Visualization</label><br>
+
+    <input type="checkbox" id="challenges" name="improve" value="Challenges">
+    <label for="challenges">Challenges</label><br>
+
+    <input type="checkbox" id="community" name="improve" value="Open Source Community">
+    <label for="community">Open Source Community</label><br>
+
+    <input type="checkbox" id="gitter" name="improve" value="Gitter">
+    <label for="gitter">Gitter help rooms</label><br>
+
+    <input type="checkbox" id="videos" name="improve" value="Videos">
+    <label for="videos">Videos</label><br>
+
+    <input type="checkbox" id="city" name="improve" value="City Meetups">
+    <label for="city">City Meetups</label><br>
+
+    <input type="checkbox" id="wiki" name="improve" value="Wiki">
+    <label for="wiki">Wiki</label><br>
+
+    <input type="checkbox" id="forum" name="improve" value="Forum">
+    <label for="forum">Forum</label><br>
+
+    <input type="checkbox" id="courses" name="improve" value="Additional Courses">
+    <label for="courses">Additional Courses</label><br>
+
+    <!-- Comments -->
+    <p>Any comment or suggestions?</p>
+    <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea><br>
+
+    <!-- Submit -->
+    <button id="submit">Submit</button>
+  </form>
+</body>
+</html>
